@@ -25,11 +25,12 @@
   ],
   "files": [
     "dist/"
-  ],  
+  ],
   "author": "Mork",
   "license": "MIT",
   "dependencies": {
     "@wdio/allure-reporter": "^8.29.3",
+    "dotenv": "^16.4.1",
     "mocha": "^10.2.0"
   },
   "devDependencies": {

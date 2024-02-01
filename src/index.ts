@@ -1,5 +1,8 @@
 import Mocha from 'mocha';
 import allureReporter from '@wdio/allure-reporter';
+import * as dotenv from 'dotenv';
+
+dotenv.config();
 
 interface AllureConfig {
     addTag?: string | string[];
@@ -82,9 +85,9 @@ function applyAllureConfig(allureConfig: AllureConfig) {
       allureReporter.addDescription(allureConfig.addDescription.description, allureConfig.addDescription.type || 'text');
     }
     if (allureConfig.jiraTicketId) {
-      const jiraBaseUrl = 'https://example.atlassian.net/browse/';
+      const jiraBaseUrl = process.env.PROJECT_BASE_URL || 'https://example.atlassian.net/browse/';
       const fullJiraLink = jiraBaseUrl + allureConfig.jiraTicketId;
-      allureReporter.addLink(fullJiraLink, 'Jira Ticket', 'issue');
+      allureReporter.addLink(fullJiraLink, fullJiraLink, 'issue');
     }
 }
 
