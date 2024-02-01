@@ -23,5 +23,11 @@ describe('My Feature Tests', function() {
         await expect($('#flash')).toHaveTextContaining(
             'You logged into a secure area!')
     })
+
+    it.meta({
+        addDescription: { description: 'Dummy Test 2', type: 'text' },
+    })('Dummy Test 2', async () => {
+        console.log('potato');
+    })
 })
 
