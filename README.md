@@ -31,12 +31,12 @@ It is assumed that you have the following dependencies installed in your project
     @wdio/local-runner
     @wdio/mocha-framework
     @wdio/spec-reporter
+    allure-commandline
     mocha
     ts-node
     typescript
     @wdio/allure-reporter
-    @wdio/globals
-    @wdio/junit-reporter
+    dotenv
 
 ## 🔌 Installation 🔌
  
