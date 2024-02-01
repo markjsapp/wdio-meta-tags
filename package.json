@@ -11,6 +11,10 @@
     "clean-allure-report": "rm -rf allure/* || true",
     "open-allure-report": "npx allure open allure/allure-report"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markjsapp/wdio-meta-tags"
+  },
   "keywords": [
     "Meta",
     "WDIO",
