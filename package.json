@@ -2,7 +2,7 @@
   "name": "wdio-meta-tags",
   "version": "1.0.0",
   "description": "a node package that allows Testcafe like meta tagging for WDIO and Allure via Mocha",
-  "main": "/test/test.e2e.ts",
+  "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
     "test": "npx wdio run wdio.conf.ts",
@@ -19,6 +19,9 @@
     "Allure",
     "Jira"
   ],
+  "files": [
+    "dist/"
+  ],  
   "author": "Mork",
   "license": "MIT",
   "dependencies": {
