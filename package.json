@@ -1,0 +1,39 @@
+{
+  "name": "wdio-meta-tags",
+  "version": "1.0.0",
+  "description": "a node package that allows Testcafe like meta tagging for WDIO and Allure via Mocha",
+  "main": "/test/test.e2e.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "npx wdio run wdio.conf.ts",
+    "wdio": "wdio run ./wdio.conf.ts",
+    "generate-allure-report": "npx allure generate allure/allure-results --clean -o allure/allure-report",
+    "clean-allure-report": "rm -rf allure/* || true",
+    "open-allure-report": "npx allure open allure/allure-report"
+  },
+  "keywords": [
+    "Meta",
+    "WDIO",
+    "Tags",
+    "Tagging",
+    "Allure",
+    "Jira"
+  ],
+  "author": "Mork",
+  "license": "MIT",
+  "dependencies": {
+    "@wdio/allure-reporter": "^8.29.3",
+    "mocha": "^10.2.0"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^20.11.14",
+    "@wdio/cli": "^8.29.3",
+    "@wdio/local-runner": "^8.29.5",
+    "@wdio/mocha-framework": "^8.29.3",
+    "@wdio/spec-reporter": "^8.29.3",
+    "allure-commandline": "^2.26.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
