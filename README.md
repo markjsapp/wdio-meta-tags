@@ -11,7 +11,7 @@
 - [Troubleshooting](#troubleshooting)
 
 ## 📓 Purpose 📓
-"Damn I wish that WDIO supported using a simple .meta() that I could use for either GREPing tests or easily appending stuff to an Allure report". Wish granted.
+Have you ever thought to yourself "Damn I wish that WDIO supported using a simple .meta() like Testcafe does. So that way I could use to easily append stuff to an Allure report". Wish granted.
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/G2G3TQC7N)
 
