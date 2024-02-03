@@ -1,6 +1,6 @@
 {
   "name": "wdio-meta-tags",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "a node/typescript package that allows Testcafe like meta tagging for WDIO and Allure via Mocha",
   "main": "dist/index.js",
   "scripts": {
