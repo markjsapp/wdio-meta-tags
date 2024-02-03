@@ -11,7 +11,7 @@
 - [Troubleshooting](#troubleshooting)
 
 ## 📓 Purpose 📓
-Have you ever thought to yourself "Damn I wish that WDIO supported using a simple .meta() like Testcafe does. So that way I could use to easily append stuff to an Allure report". Wish granted.
+Have you ever thought to yourself "Damn I wish that WDIO+Mocha supported using a simple .meta() the way that Testcafe does out of the box. So that way I could use to easily append stuff to an Allure report". Wish granted. This package is basically a wrapper for Mocha that modifies the .it(), .skip(), and .only() methods to support adding "meta"-like tags to tests for more accurate Allure Reports.
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/G2G3TQC7N)
 
@@ -63,8 +63,7 @@ describe('My Feature Tests', function() {
     });
 });
 ```
-
-This probably goes without saying but you'll also need to update your WDIO config file and change the reporter to Allure.
+This probably goes without saying but you'll also need to update your WDIO config file and add Allure as a reporter and set the framework to Mocha. Additionally, you'll need to create a .env file with the variable ```WDIO_META_TAGS_JIRA_BASE_URL``` and then set it to your preferred test management software/url (ex. WDIO_META_TAGS_JIRA_BASE_URL= potato.atlassian.com/browse/). Note that this will override the allure tmsLinkTemplate in your WDIO config file.
 
 ## 🧠 Supported Allure API Commands 🧠
 @wdio/allure-reporter documentation can be found ![here](https://webdriver.io/docs/allure-reporter/#supported-allure-api).
